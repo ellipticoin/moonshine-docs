@@ -1,0 +1,2 @@
+# Consensus
+Moonshine uses proof of stake with real-time leader election to come to consensus on state. This means a single miner is repsonsible for transaction processing during the period of a block (currently 4 seconds). The winning miner uses a hash-chain to determine the next leader. Access to the mining group is controlled by a smart contract on the parent blockchain. If the winning miner fails to produce a block or produces an invalid block 51% of the miners weighted by stake can burn that miners stake.
